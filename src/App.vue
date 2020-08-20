@@ -1,32 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+<!--    项目：https://www.lanrentuku.com/js/date-1236.html-->
+<!--      <v1></v1>-->
+      <v2></v2>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+    import v1 from './components/v1'
+    import v2 from './components/v2'
+    export default {
+      components:{v1,v2}
+    }
+</script>
+<style lang="scss">
+html,body,#app{
+  height: 100%;
 }
+  #app{
+    position: relative;
+    padding: 0;
+    margin: 0;
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 </style>
